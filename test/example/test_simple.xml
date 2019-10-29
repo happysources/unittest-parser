@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="TEST_integration" tests="4" errors="0" failures="0" skip="0"><testcase classname="basic_test.TestStringMethods" name="testNoUsedMask" time="0.001"><system-err><![CDATA[2019/10/23 14:19:14 [22030] LOGNAME D0: file=%s
+2019/10/23 14:19:14 [22030] LOGNAME D0: file: logFile not input
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=5
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=5
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=5
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=5
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=5
+2019/10/23 14:19:14 [22030] LOGNAME D0: mask=I4
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=5
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=5
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=5
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=5
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=5
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setMask: self.__logniMaskSeverityShort=['D', 'I', 'W', 'E', 'C']
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setMask: self.__logniMaskSeverity={'C': 5, 'W': 5, 'E': 5, 'D': 5, 'I': 5}
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=4
+2019/10/23 14:19:14 [22030] LOGNAME D0: mask: len=I, priority=4
+2019/10/23 14:19:14 [22030] LOGNAME D0: mask: self.__logniMaskSeverity={'C': 5, 'W': 5, 'E': 5, 'D': 5, 'I': 4}
+2019/10/23 14:19:14 [22030] LOGNAME D0: console=True
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: log.__logUse: severity=INFO, priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: log.__logUse: severity=INFO, msg priority=1 < mask priority=4 -> msg log is HIDDEN
+]]></system-err></testcase><testcase classname="basic_test.TestStringMethods" name="testNonExistMethod" time="0.001"><system-err><![CDATA[2019/10/23 14:19:14 [22030] LOGNAME D0: file=%s
+2019/10/23 14:19:14 [22030] LOGNAME D0: file: logFile not input
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=5
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=5
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=5
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=5
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=5
+2019/10/23 14:19:14 [22030] LOGNAME D0: mask=ALL
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setMask: self.__logniMaskSeverityShort=['D', 'I', 'W', 'E', 'C']
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setMask: self.__logniMaskSeverity={'C': 1, 'W': 1, 'E': 1, 'D': 1, 'I': 1}
+2019/10/23 14:19:14 [22030] LOGNAME D0: console=True
+]]></system-err></testcase><testcase classname="basic_test.TestStringMethods" name="testNonExistParameter" time="0.001"><system-err><![CDATA[2019/10/23 14:19:14 [22030] LOGNAME D0: file=%s
+2019/10/23 14:19:14 [22030] LOGNAME D0: file: logFile not input
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=5
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=5
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=5
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=5
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=5
+2019/10/23 14:19:14 [22030] LOGNAME D0: mask=ALL
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setMask: self.__logniMaskSeverityShort=['D', 'I', 'W', 'E', 'C']
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setMask: self.__logniMaskSeverity={'C': 1, 'W': 1, 'E': 1, 'D': 1, 'I': 1}
+2019/10/23 14:19:14 [22030] LOGNAME D0: console=True
+]]></system-err></testcase><testcase classname="basic_test.TestStringMethods" name="testOK" time="0.002"><system-err><![CDATA[2019/10/23 14:19:14 [22030] LOGNAME D0: file=%s
+2019/10/23 14:19:14 [22030] LOGNAME D0: file: logFile not input
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=5
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=5
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=5
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=5
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=5
+2019/10/23 14:19:14 [22030] LOGNAME D0: mask=ALL
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setMask: self.__logniMaskSeverityShort=['D', 'I', 'W', 'E', 'C']
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setMask: self.__logniMaskSeverity={'C': 1, 'W': 1, 'E': 1, 'D': 1, 'I': 1}
+2019/10/23 14:19:14 [22030] LOGNAME D0: console=True
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: log.__logUse: severity=INFO, priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: log.__logUse: severity=INFO, msg priority=1 >= mask=ALL -> msg log is VISIBLE
+2019/10/23 14:19:14 [22030] LOGNAME I1: info message [ebf919ac] {logni.py:info():341}
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: log.__logUse: severity=WARN, priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: log.__logUse: severity=WARN, msg priority=1 >= mask=ALL -> msg log is VISIBLE
+2019/10/23 14:19:14 [22030] LOGNAME W1: warn message [82d5fc94] {logni.py:warn():327}
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: log.__logUse: severity=ERR, priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: log.__logUse: severity=ERR, msg priority=1 >= mask=ALL -> msg log is VISIBLE
+2019/10/23 14:19:14 [22030] LOGNAME E1: error message [df5925ae] {logni.py:error():313}
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: log.__logUse: severity=CRITICAL, priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: log.__logUse: severity=CRITICAL, msg priority=1 >= mask=ALL -> msg log is VISIBLE
+2019/10/23 14:19:14 [22030] LOGNAME C1: critical message [bf05c5cc] {logni.py:critical():299}
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: log.__logUse: severity=DEBUG, priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: __setPriority: priority=1
+2019/10/23 14:19:14 [22030] LOGNAME D0: log.__logUse: severity=DEBUG, msg priority=1 >= mask=ALL -> msg log is VISIBLE
+2019/10/23 14:19:14 [22030] LOGNAME D1: debug message [2dc5df52] {logni.py:debug():355}
+]]></system-err></testcase></testsuite>
