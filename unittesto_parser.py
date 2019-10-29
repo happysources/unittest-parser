@@ -5,7 +5,7 @@
 UnitTest parser
 """
 
-import xml.etree.ElementTree as ET
+import xml.etree.ElementTree
 
 
 class UnitTestParser(object):
@@ -28,7 +28,7 @@ class UnitTestParser(object):
 	def parse(self, xmlfile):
 		""" xml parser """
 
-		tree = ET.parse(xmlfile)
+		tree = xml.etree.ElementTree.parse(xmlfile)
 		root = tree.getroot()
 
 		xmlstruct = {'head':root, 'data':[], 'time':{'total':0.0}, 'classnames':{}}
@@ -38,7 +38,7 @@ class UnitTestParser(object):
 			xmlstruct['time']['total'] = xmlstruct['time']['total'] + float(child.attrib['time'])
 
 			classname = child.attrib['classname']
-			classnames = classname.split('.')	
+			classnames = classname.split('.')
 			xmlstruct['time'][classname] = xmlstruct['time'].get(classname, 0.0)
 			xmlstruct['time'][classname] = xmlstruct['time'][classname] + float(child.attrib['time'])
 			# classnames
@@ -46,7 +46,6 @@ class UnitTestParser(object):
 			xmlstruct['classnames'][classname] = xmlstruct['classnames'][classname] + 1
 
 			# class file/name
-			
 			child.attrib['classfile'] = classnames[0]
 			child.attrib['classname'] = classnames[1]
 
