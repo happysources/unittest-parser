@@ -6,6 +6,7 @@ UnitTest parser
 """
 
 import xml.etree.ElementTree
+import time
 
 
 class UnitTestParser(object):
@@ -23,6 +24,9 @@ class UnitTestParser(object):
 		'error' : 'bg-warning',
 		'system-out' : 'bg-light',
 		'system-err' : 'bg-light'}
+
+	AUTHOR_NAME = 'happy.sources'
+	AUTHOR_URL = 'https://github.com/happysources'
 
 
 	def parse(self, xmlfile):
@@ -71,6 +75,10 @@ class UnitTestParser(object):
 		output = []
 		output.append('<html>')
 		output.append('\t<head>')
+		output.append('\t\t<meta charset="UTF-8">')
+		output.append('\t\t<meta name="author" content="%s" />' % self.AUTHOR_NAME)
+		output.append('\t\t<meta http-equiv=”last-modified” content=”%s”>' % \
+			time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
 		output.append('\t\t<link rel="stylesheet" ')
 		output.append('href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" ')
 		output.append('crossorigin="anonymous">')
@@ -103,6 +111,10 @@ class UnitTestParser(object):
 
 	def __footer(self, output):
 		""" footer """
+
+		output.append('<hr size=1>')
+		output.append('<div class="float-right">developed with love <a href="%s">%s</a></div>' % \
+			(self.AUTHOR_URL, self.AUTHOR_NAME))
 
 		output.append('</body></html>')
 
