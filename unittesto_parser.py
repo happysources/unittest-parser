@@ -38,6 +38,7 @@ class UnitTestParser(object):
 			xmlstruct['time']['total'] = xmlstruct['time']['total'] + float(child.attrib['time'])
 
 			classname = child.attrib['classname']
+			classnames = classname.split('.')	
 			xmlstruct['time'][classname] = xmlstruct['time'].get(classname, 0.0)
 			xmlstruct['time'][classname] = xmlstruct['time'][classname] + float(child.attrib['time'])
 			# classnames
@@ -45,8 +46,9 @@ class UnitTestParser(object):
 			xmlstruct['classnames'][classname] = xmlstruct['classnames'][classname] + 1
 
 			# class file/name
-			child.attrib['classfile'] = child.attrib['classname'].split('.')[0]
-			child.attrib['classname'] = child.attrib['classname'].split('.')[1]
+			
+			child.attrib['classfile'] = classnames[0]
+			child.attrib['classname'] = classnames[1]
 
 			# testcase
 			struct = {'tag': child.tag, 'attrib':child.attrib, 'child':[]}
@@ -80,18 +82,22 @@ class UnitTestParser(object):
 		output.append('<h1>Test Result</h1>')
 
 		# header: attrib
-		for key in self.HEADER_KEY:
-			output.append('\t<strong>%s</strong>: %s<br />' % (key, xmlstruct['head'].attrib[key]))
+		for attribName in self.HEADER_KEY:
+			output.append('\t<strong>%s</strong>: %s<br />' % \
+				(attribName, xmlstruct['head'].attrib[attribName]))
 
 		# header: classname
+		classnames = xmlstruct['classnames']
 		output.append('\t<strong>classname</strong>: <br /> ')
-		for key in xmlstruct['classnames']:
-			output.append('- %s: %s <br />' % (key, xmlstruct['classnames'][key]))
+		for className in classnames:
+			output.append('- %s: %s <br />' % \
+				(className, classnames[className]))
 
 		# header: time
 		output.append('\t<strong>time</strong>: <br />')
-		for key in xmlstruct['time']:
-			output.append('- %s: %s <br />' % (key, xmlstruct['time'][key]))
+		for timeName in xmlstruct['time']:
+			output.append('- %s: %s <br />' % \
+				(timeName, xmlstruct['time'][timeName]))
 
 		return output
 
