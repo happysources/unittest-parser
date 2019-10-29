@@ -25,11 +25,11 @@ script:
   - echo "pylint --errors-only *.py ... "
   - pylint --errors-only *.py
 
-  - echo "pytest ... "
-  - pytest
+  #- echo "pytest ... "
+  #- pytest
  
   - echo "simple test ... "
-  - python unittesto_parser.py test/example/test_simple.xml
+  - python unittesto_parser.py test/example/test_simple.xml > /tmp/test_simple.html
 
   - echo "multi tests ... "
-  - python unittesto_parser.py test/example/test_multi.xml
+  - python unittesto_parser.py test/example/test_multi.xml > /tmp/test_multi.html
