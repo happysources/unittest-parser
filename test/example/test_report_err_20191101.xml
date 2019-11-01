@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="Main_Test_Suite" tests="8" errors="1" failures="0" skip="0"><testcase classname="sanity_suite.SanityTestSuite" name="test_00_incorrect_login" time="4.370"><system-out><![CDATA[TEST_LOG {"message":"username |a|  ,password |b|","ts":"2019-11-01 12:03:55.667385"}
+ASSERT_OK {"message":"Id login_f1_in_username not found","ts":"2019-11-01 12:03:55.785557"}
+ASSERT_OK {"message":"Id login_f1_in_password not found","ts":"2019-11-01 12:03:55.801408"}
+ASSERT_OK {"message":"Id login_f1_btn_send not found","ts":"2019-11-01 12:03:55.817689"}
+ASSERT_OK {"message":"Id alert message not found","ts":"2019-11-01 12:03:56.047394"}
+Username or Password is invalid
+ASSERT_OK {"message":"text is Username or Password is invalid","ts":"2019-11-01 12:03:56.104965"}
+TEST_LOG {"message":"username ||  ,password |b|","ts":"2019-11-01 12:03:56.105010"}
+ASSERT_OK {"message":"Id login_f1_in_username not found","ts":"2019-11-01 12:03:56.167882"}
+ASSERT_OK {"message":"Id login_f1_in_password not found","ts":"2019-11-01 12:03:56.180047"}
+ASSERT_OK {"message":"Id login_f1_btn_send not found","ts":"2019-11-01 12:03:56.192411"}
+ASSERT_OK {"message":"Id alert message not found","ts":"2019-11-01 12:03:56.409676"}
+Username or Password is invalid
+ASSERT_OK {"message":"text is Username or Password is invalid","ts":"2019-11-01 12:03:56.452283"}
+TEST_LOG {"message":"username |b|  ,password ||","ts":"2019-11-01 12:03:56.452328"}
+ASSERT_OK {"message":"Id login_f1_in_username not found","ts":"2019-11-01 12:03:56.548742"}
+ASSERT_OK {"message":"Id login_f1_in_password not found","ts":"2019-11-01 12:03:56.558933"}
+ASSERT_OK {"message":"Id login_f1_btn_send not found","ts":"2019-11-01 12:03:56.571311"}
+ASSERT_OK {"message":"Id alert message not found","ts":"2019-11-01 12:03:56.814432"}
+Username or Password is invalid
+ASSERT_OK {"message":"text is Username or Password is invalid","ts":"2019-11-01 12:03:56.862730"}
+TEST_LOG {"message":"username |martin|  ,password ||","ts":"2019-11-01 12:03:56.862768"}
+ASSERT_OK {"message":"Id login_f1_in_username not found","ts":"2019-11-01 12:03:56.953288"}
+ASSERT_OK {"message":"Id login_f1_in_password not found","ts":"2019-11-01 12:03:56.964751"}
+ASSERT_OK {"message":"Id login_f1_btn_send not found","ts":"2019-11-01 12:03:56.979308"}
+ASSERT_OK {"message":"Id alert message not found","ts":"2019-11-01 12:03:57.232060"}
+Username or Password is invalid
+ASSERT_OK {"message":"text is Username or Password is invalid","ts":"2019-11-01 12:03:57.272704"}
+TEST_LOG {"message":"username ||  ,password |martin|","ts":"2019-11-01 12:03:57.272754"}
+ASSERT_OK {"message":"Id login_f1_in_username not found","ts":"2019-11-01 12:03:57.373003"}
+ASSERT_OK {"message":"Id login_f1_in_password not found","ts":"2019-11-01 12:03:57.380685"}
+ASSERT_OK {"message":"Id login_f1_btn_send not found","ts":"2019-11-01 12:03:57.392237"}
+ASSERT_OK {"message":"Id alert message not found","ts":"2019-11-01 12:03:57.617483"}
+Username or Password is invalid
+ASSERT_OK {"message":"text is Username or Password is invalid","ts":"2019-11-01 12:03:57.658642"}
+TEST_LOG {"message":"username |aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa|  ,password |dddd|","ts":"2019-11-01 12:03:57.658688"}
+ASSERT_OK {"message":"Id login_f1_in_username not found","ts":"2019-11-01 12:03:57.745306"}
+ASSERT_OK {"message":"Id login_f1_in_password not found","ts":"2019-11-01 12:03:57.758716"}
+ASSERT_OK {"message":"Id login_f1_btn_send not found","ts":"2019-11-01 12:03:57.771998"}
+ASSERT_OK {"message":"Id alert message not found","ts":"2019-11-01 12:03:58.574670"}
+Username or Password is invalid
+ASSERT_OK {"message":"text is Username or Password is invalid","ts":"2019-11-01 12:03:58.622189"}
+TEST_LOG {"message":"username |aaaaa|  ,password |aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa|","ts":"2019-11-01 12:03:58.622231"}
+ASSERT_OK {"message":"Id login_f1_in_username not found","ts":"2019-11-01 12:03:58.731297"}
+ASSERT_OK {"message":"Id login_f1_in_password not found","ts":"2019-11-01 12:03:58.746543"}
+ASSERT_OK {"message":"Id login_f1_btn_send not found","ts":"2019-11-01 12:03:58.758561"}
+ASSERT_OK {"message":"Id alert message not found","ts":"2019-11-01 12:03:59.535044"}
+Username or Password is invalid
+ASSERT_OK {"message":"text is Username or Password is invalid","ts":"2019-11-01 12:03:59.575896"}
+]]></system-out></testcase><testcase classname="sanity_suite.SanityTestSuite" name="test_00_incorrect_registration" time="0.607"><error type="builtins.KeyError" message="'0'&#10;-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------&#10;ASSERT_OK {&quot;message&quot;:&quot;Id user_email not found&quot;,&quot;ts&quot;:&quot;2019-11-01 12:04:00.131486&quot;}&#10;ASSERT_OK {&quot;message&quot;:&quot;Id user_password not found&quot;,&quot;ts&quot;:&quot;2019-11-01 12:04:00.148357&quot;}&#10;ASSERT_OK {&quot;message&quot;:&quot;Id user_password_confirm not found&quot;,&quot;ts&quot;:&quot;2019-11-01 12:04:00.163205&quot;}&#10;ASSERT_OK {&quot;message&quot;:&quot;Id user_email not found&quot;,&quot;ts&quot;:&quot;2019-11-01 12:04:00.170344&quot;}&#10;ASSERT_OK {&quot;message&quot;:&quot;Id button_register not found&quot;,&quot;ts&quot;:&quot;2019-11-01 12:04:00.182927&quot;}&#10;&#10;--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;selenium.webdriver.remote.remote_connection: DEBUG: POST http://192.168.1.224:4444/wd/hub/session {&quot;capabilities&quot;: {&quot;firstMatch&quot;: [{}], &quot;alwaysMatch&quot;: {&quot;browserName&quot;: &quot;chrome&quot;, &quot;platformName&quot;: &quot;any&quot;, &quot;goog:chromeOptions&quot;: {&quot;extensions&quot;: [], &quot;args&quot;: [&quot;--headless&quot;, &quot;--whitelisted-ips='192.168.1.224,172.17.0.1 ,127.0.0.1'&quot;]}}}, &quot;desiredCapabilities&quot;: {&quot;browserName&quot;: &quot;chrome&quot;, &quot;version&quot;: &quot;&quot;, &quot;platform&quot;: &quot;ANY&quot;, &quot;goog:chromeOptions&quot;: {&quot;extensions&quot;: [], &quot;args&quot;: [&quot;--headless&quot;, &quot;--whitelisted-ips='192.168.1.224,172.17.0.1 ,127.0.0.1'&quot;]}}}&#10;urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 192.168.1.224:4444&#10;urllib3.connectionpool: DEBUG: http://192.168.1.224:4444 &quot;POST /wd/hub/session HTTP/1.1&quot; 200 950&#10;selenium.webdriver.remote.remote_connection: DEBUG: Finished Request&#10;selenium.webdriver.remote.remote_connection: DEBUG: POST http://192.168.1.224:4444/wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/url {&quot;url&quot;: &quot;http://192.168.1.224:4000&quot;}&#10;urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 192.168.1.224:4444&#10;urllib3.connectionpool: DEBUG: http://192.168.1.224:4444 &quot;POST /wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/url HTTP/1.1&quot; 200 14&#10;selenium.webdriver.remote.remote_connection: DEBUG: Finished Request&#10;selenium.webdriver.remote.remote_connection: DEBUG: POST http://192.168.1.224:4444/wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element {&quot;using&quot;: &quot;css selector&quot;, &quot;value&quot;: &quot;[id=\&quot;user_logged\&quot;]&quot;}&#10;urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 192.168.1.224:4444&#10;urllib3.connectionpool: DEBUG: http://192.168.1.224:4444 &quot;POST /wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element HTTP/1.1&quot; 404 258&#10;selenium.webdriver.remote.remote_connection: DEBUG: Finished Request&#10;selenium.webdriver.remote.remote_connection: DEBUG: POST http://192.168.1.224:4444/wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element {&quot;using&quot;: &quot;css selector&quot;, &quot;value&quot;: &quot;[id=\&quot;footer_d_register\&quot;]&quot;}&#10;urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 192.168.1.224:4444&#10;urllib3.connectionpool: DEBUG: http://192.168.1.224:4444 &quot;POST /wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element HTTP/1.1&quot; 200 88&#10;selenium.webdriver.remote.remote_connection: DEBUG: Finished Request&#10;selenium.webdriver.remote.remote_connection: DEBUG: POST http://192.168.1.224:4444/wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element/38d16a74-1d99-4f0b-8871-58bcb1f8f163/click {&quot;id&quot;: &quot;38d16a74-1d99-4f0b-8871-58bcb1f8f163&quot;}&#10;urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 192.168.1.224:4444&#10;urllib3.connectionpool: DEBUG: http://192.168.1.224:4444 &quot;POST /wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element/38d16a74-1d99-4f0b-8871-58bcb1f8f163/click HTTP/1.1&quot; 200 14&#10;selenium.webdriver.remote.remote_connection: DEBUG: Finished Request&#10;selenium.webdriver.remote.remote_connection: DEBUG: POST http://192.168.1.224:4444/wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element {&quot;using&quot;: &quot;css selector&quot;, &quot;value&quot;: &quot;[id=\&quot;in_user_email\&quot;]&quot;}&#10;urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 192.168.1.224:4444&#10;urllib3.connectionpool: DEBUG: http://192.168.1.224:4444 &quot;POST /wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element HTTP/1.1&quot; 200 88&#10;selenium.webdriver.remote.remote_connection: DEBUG: Finished Request&#10;selenium.webdriver.remote.remote_connection: DEBUG: POST http://192.168.1.224:4444/wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element {&quot;using&quot;: &quot;css selector&quot;, &quot;value&quot;: &quot;[id=\&quot;in_user_password\&quot;]&quot;}&#10;urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 192.168.1.224:4444&#10;urllib3.connectionpool: DEBUG: http://192.168.1.224:4444 &quot;POST /wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element HTTP/1.1&quot; 200 88&#10;selenium.webdriver.remote.remote_connection: DEBUG: Finished Request&#10;selenium.webdriver.remote.remote_connection: DEBUG: POST http://192.168.1.224:4444/wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element {&quot;using&quot;: &quot;css selector&quot;, &quot;value&quot;: &quot;[id=\&quot;in_user_password_confirm\&quot;]&quot;}&#10;urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 192.168.1.224:4444&#10;urllib3.connectionpool: DEBUG: http://192.168.1.224:4444 &quot;POST /wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element HTTP/1.1&quot; 200 88&#10;selenium.webdriver.remote.remote_connection: DEBUG: Finished Request&#10;selenium.webdriver.remote.remote_connection: DEBUG: POST http://192.168.1.224:4444/wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element {&quot;using&quot;: &quot;css selector&quot;, &quot;value&quot;: &quot;[id=\&quot;in_user_email\&quot;]&quot;}&#10;urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 192.168.1.224:4444&#10;urllib3.connectionpool: DEBUG: http://192.168.1.224:4444 &quot;POST /wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element HTTP/1.1&quot; 200 88&#10;selenium.webdriver.remote.remote_connection: DEBUG: Finished Request&#10;selenium.webdriver.remote.remote_connection: DEBUG: POST http://192.168.1.224:4444/wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element {&quot;using&quot;: &quot;css selector&quot;, &quot;value&quot;: &quot;[id=\&quot;button_register\&quot;]&quot;}&#10;urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 192.168.1.224:4444&#10;urllib3.connectionpool: DEBUG: http://192.168.1.224:4444 &quot;POST /wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element HTTP/1.1&quot; 200 88&#10;selenium.webdriver.remote.remote_connection: DEBUG: Finished Request&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------"><![CDATA[  File "/usr/lib/python3.7/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.7/unittest/case.py", line 615, in run
+    testMethod()
+  File "/opt/eshop/tests/selenium/sanity_suite.py", line 92, in test_00_incorrect_registration
+    test_log("username |%s|  ,password |%s|,c_password |%s|,email |%s|" % (x["0"], x["password"],
+'0'
+-------------------- >> begin captured stdout << ---------------------
+ASSERT_OK {"message":"Id user_email not found","ts":"2019-11-01 12:04:00.131486"}
+ASSERT_OK {"message":"Id user_password not found","ts":"2019-11-01 12:04:00.148357"}
+ASSERT_OK {"message":"Id user_password_confirm not found","ts":"2019-11-01 12:04:00.163205"}
+ASSERT_OK {"message":"Id user_email not found","ts":"2019-11-01 12:04:00.170344"}
+ASSERT_OK {"message":"Id button_register not found","ts":"2019-11-01 12:04:00.182927"}
+
+--------------------- >> end captured stdout << ----------------------
+-------------------- >> begin captured logging << --------------------
+selenium.webdriver.remote.remote_connection: DEBUG: POST http://192.168.1.224:4444/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": ["--headless", "--whitelisted-ips='192.168.1.224,172.17.0.1 ,127.0.0.1'"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": ["--headless", "--whitelisted-ips='192.168.1.224,172.17.0.1 ,127.0.0.1'"]}}}
+urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 192.168.1.224:4444
+urllib3.connectionpool: DEBUG: http://192.168.1.224:4444 "POST /wd/hub/session HTTP/1.1" 200 950
+selenium.webdriver.remote.remote_connection: DEBUG: Finished Request
+selenium.webdriver.remote.remote_connection: DEBUG: POST http://192.168.1.224:4444/wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/url {"url": "http://192.168.1.224:4000"}
+urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 192.168.1.224:4444
+urllib3.connectionpool: DEBUG: http://192.168.1.224:4444 "POST /wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/url HTTP/1.1" 200 14
+selenium.webdriver.remote.remote_connection: DEBUG: Finished Request
+selenium.webdriver.remote.remote_connection: DEBUG: POST http://192.168.1.224:4444/wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element {"using": "css selector", "value": "[id=\"user_logged\"]"}
+urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 192.168.1.224:4444
+urllib3.connectionpool: DEBUG: http://192.168.1.224:4444 "POST /wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element HTTP/1.1" 404 258
+selenium.webdriver.remote.remote_connection: DEBUG: Finished Request
+selenium.webdriver.remote.remote_connection: DEBUG: POST http://192.168.1.224:4444/wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element {"using": "css selector", "value": "[id=\"footer_d_register\"]"}
+urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 192.168.1.224:4444
+urllib3.connectionpool: DEBUG: http://192.168.1.224:4444 "POST /wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element HTTP/1.1" 200 88
+selenium.webdriver.remote.remote_connection: DEBUG: Finished Request
+selenium.webdriver.remote.remote_connection: DEBUG: POST http://192.168.1.224:4444/wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element/38d16a74-1d99-4f0b-8871-58bcb1f8f163/click {"id": "38d16a74-1d99-4f0b-8871-58bcb1f8f163"}
+urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 192.168.1.224:4444
+urllib3.connectionpool: DEBUG: http://192.168.1.224:4444 "POST /wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element/38d16a74-1d99-4f0b-8871-58bcb1f8f163/click HTTP/1.1" 200 14
+selenium.webdriver.remote.remote_connection: DEBUG: Finished Request
+selenium.webdriver.remote.remote_connection: DEBUG: POST http://192.168.1.224:4444/wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element {"using": "css selector", "value": "[id=\"in_user_email\"]"}
+urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 192.168.1.224:4444
+urllib3.connectionpool: DEBUG: http://192.168.1.224:4444 "POST /wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element HTTP/1.1" 200 88
+selenium.webdriver.remote.remote_connection: DEBUG: Finished Request
+selenium.webdriver.remote.remote_connection: DEBUG: POST http://192.168.1.224:4444/wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element {"using": "css selector", "value": "[id=\"in_user_password\"]"}
+urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 192.168.1.224:4444
+urllib3.connectionpool: DEBUG: http://192.168.1.224:4444 "POST /wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element HTTP/1.1" 200 88
+selenium.webdriver.remote.remote_connection: DEBUG: Finished Request
+selenium.webdriver.remote.remote_connection: DEBUG: POST http://192.168.1.224:4444/wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element {"using": "css selector", "value": "[id=\"in_user_password_confirm\"]"}
+urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 192.168.1.224:4444
+urllib3.connectionpool: DEBUG: http://192.168.1.224:4444 "POST /wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element HTTP/1.1" 200 88
+selenium.webdriver.remote.remote_connection: DEBUG: Finished Request
+selenium.webdriver.remote.remote_connection: DEBUG: POST http://192.168.1.224:4444/wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element {"using": "css selector", "value": "[id=\"in_user_email\"]"}
+urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 192.168.1.224:4444
+urllib3.connectionpool: DEBUG: http://192.168.1.224:4444 "POST /wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element HTTP/1.1" 200 88
+selenium.webdriver.remote.remote_connection: DEBUG: Finished Request
+selenium.webdriver.remote.remote_connection: DEBUG: POST http://192.168.1.224:4444/wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element {"using": "css selector", "value": "[id=\"button_register\"]"}
+urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 192.168.1.224:4444
+urllib3.connectionpool: DEBUG: http://192.168.1.224:4444 "POST /wd/hub/session/37baa8786c7ec8e8575499a5e83e1f9b/element HTTP/1.1" 200 88
+selenium.webdriver.remote.remote_connection: DEBUG: Finished Request
+--------------------- >> end captured logging << ---------------------]]></error><system-out><![CDATA[ASSERT_OK {"message":"Id user_email not found","ts":"2019-11-01 12:04:00.131486"}
+ASSERT_OK {"message":"Id user_password not found","ts":"2019-11-01 12:04:00.148357"}
+ASSERT_OK {"message":"Id user_password_confirm not found","ts":"2019-11-01 12:04:00.163205"}
+ASSERT_OK {"message":"Id user_email not found","ts":"2019-11-01 12:04:00.170344"}
+ASSERT_OK {"message":"Id button_register not found","ts":"2019-11-01 12:04:00.182927"}
+]]></system-out></testcase><testcase classname="sanity_suite.SanityTestSuite" name="test_07_registration" time="1.248"><system-out><![CDATA[TEST_LOG {"message":"Filling username 20191101120355","ts":"2019-11-01 12:04:00.919145"}
+TEST_LOG {"message":"Filling password pass","ts":"2019-11-01 12:04:01.021585"}
+TEST_LOG {"message":"Filling password_c pass","ts":"2019-11-01 12:04:01.090443"}
+TEST_LOG {"message":"Filling email a@a.a","ts":"2019-11-01 12:04:01.162575"}
+TEST_LOG {"message":"Click register","ts":"2019-11-01 12:04:01.227262"}
+ASSERT_OK {"message":"Id alert message not found","ts":"2019-11-01 12:04:01.399750"}
+ASSERT_OK {"message":"was successful not found in alert_message","ts":"2019-11-01 12:04:01.425960"}
+ASSERT_OK {"message":"Registration for user not found in alert_message","ts":"2019-11-01 12:04:01.433339"}
+]]></system-out></testcase><testcase classname="sanity_suite.SanityTestSuite" name="test_08_user_login" time="1.095"><system-out><![CDATA[ASSERT_OK {"message":"Id login_f1_in_username not found","ts":"2019-11-01 12:04:02.184465"}
+ASSERT_OK {"message":"Id login_f1_in_password not found","ts":"2019-11-01 12:04:02.199923"}
+ASSERT_OK {"message":"Id login_f1_btn_send not found","ts":"2019-11-01 12:04:02.221854"}
+ASSERT_OK {"message":"Check if user is logged","ts":"2019-11-01 12:04:02.528340"}
+]]></system-out></testcase><testcase classname="main_suite.MainTestSuite" name="test_10_homepage" time="1.020"><system-out><![CDATA[ASSERT_OK {"message":"Id login_f1_in_username not found","ts":"2019-11-01 12:04:03.086278"}
+ASSERT_OK {"message":"Id login_f1_in_password not found","ts":"2019-11-01 12:04:03.104660"}
+ASSERT_OK {"message":"Id login_f1_btn_send not found","ts":"2019-11-01 12:04:03.119979"}
+ASSERT_OK {"message":"Element app_running not found","ts":"2019-11-01 12:04:03.414695"}
+ASSERT_OK {"message":"Element footer_d_login not found","ts":"2019-11-01 12:04:03.430538"}
+ASSERT_OK {"message":"Element footer_d_register not found","ts":"2019-11-01 12:04:03.442506"}
+ASSERT_OK {"message":"Element footer_d_logout not found","ts":"2019-11-01 12:04:03.452584"}
+ASSERT_OK {"message":"Check we have category 1","ts":"2019-11-01 12:04:03.483611"}
+ASSERT_OK {"message":"Check we have category 2","ts":"2019-11-01 12:04:03.498176"}
+ASSERT_OK {"message":"Element hdr_nav_home not found","ts":"2019-11-01 12:04:03.511367"}
+ASSERT_OK {"message":"Element hdr_nav_cart not found","ts":"2019-11-01 12:04:03.524237"}
+ASSERT_OK {"message":"Element hdr_nav_login not found","ts":"2019-11-01 12:04:03.537384"}
+ASSERT_OK {"message":"Element hdr_nav_order_list not found","ts":"2019-11-01 12:04:03.550647"}
+]]></system-out></testcase><testcase classname="main_suite.MainTestSuite" name="test_20_product_category_crawl" time="1.401"><system-out><![CDATA[ASSERT_OK {"message":"Id login_f1_in_username not found","ts":"2019-11-01 12:04:04.131988"}
+ASSERT_OK {"message":"Id login_f1_in_password not found","ts":"2019-11-01 12:04:04.150466"}
+ASSERT_OK {"message":"Id login_f1_btn_send not found","ts":"2019-11-01 12:04:04.165340"}
+]]></system-out></testcase><testcase classname="main_suite.MainTestSuite" name="test_30_create_demo_order" time="3.255"><system-out><![CDATA[ASSERT_OK {"message":"Id login_f1_in_username not found","ts":"2019-11-01 12:04:05.497549"}
+ASSERT_OK {"message":"Id login_f1_in_password not found","ts":"2019-11-01 12:04:05.515399"}
+ASSERT_OK {"message":"Id login_f1_btn_send not found","ts":"2019-11-01 12:04:05.529646"}
+ASSERT_OK {"message":"Element alert_message not found","ts":"2019-11-01 12:04:06.211290"}
+ASSERT_OK {"message":"Text "Added to cart" exist ","ts":"2019-11-01 12:04:06.235883"}
+ASSERT_OK {"message":"Element alert_message not found","ts":"2019-11-01 12:04:06.835943"}
+ASSERT_OK {"message":"Text "Added to cart" exist ","ts":"2019-11-01 12:04:06.867014"}
+ASSERT_OK {"message":"Element alert_message not found","ts":"2019-11-01 12:04:07.251541"}
+ASSERT_OK {"message":"Text "removed from cart" exist ","ts":"2019-11-01 12:04:07.279127"}
+ASSERT_OK {"message":"Element alert_message not found","ts":"2019-11-01 12:04:07.674301"}
+ASSERT_OK {"message":"Text "Added to cart" exist ","ts":"2019-11-01 12:04:07.702666"}
+ASSERT_OK {"message":"Element alert_message not found","ts":"2019-11-01 12:04:08.144963"}
+ASSERT_OK {"message":"Text "created" exist ","ts":"2019-11-01 12:04:08.178986"}
+here1
+AA 3
+]]></system-out></testcase><testcase classname="main_suite.MainTestSuite" name="test_40_delete_existing_order" time="1.109"><system-out><![CDATA[ASSERT_OK {"message":"Id login_f1_in_username not found","ts":"2019-11-01 12:04:08.741728"}
+ASSERT_OK {"message":"Id login_f1_in_password not found","ts":"2019-11-01 12:04:08.755523"}
+ASSERT_OK {"message":"Id login_f1_btn_send not found","ts":"2019-11-01 12:04:08.772815"}
+ASSERT_OK {"message":"Element alert_message not found","ts":"2019-11-01 12:04:09.296051"}
+ASSERT_OK {"message":"Text "deleted" exist ","ts":"2019-11-01 12:04:09.315187"}
+]]></system-out></testcase></testsuite>
